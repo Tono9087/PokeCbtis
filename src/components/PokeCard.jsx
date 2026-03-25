@@ -13,12 +13,12 @@ export default function PokeCard({ entry }) {
       </div>
 
       <div className="poke-card-v2__image-wrap">
-        <img src={avatarUrl} alt={entry.name} className="poke-card-v2__image" loading="lazy" />
+        <img src={avatarUrl} alt={entry.nombre || entry.name} className="poke-card-v2__image" loading="lazy" />
       </div>
 
       <div className="poke-card-v2__info">
         <span className="poke-card-v2__id">#{entry.id}</span>
-        <h3 className="poke-card-v2__name">{entry.name}</h3>
+        <h3 className="poke-card-v2__name">{entry.nombre || entry.name}</h3>
         <span className="poke-card-v2__type">
           {entry.especialidad || entry.type}
         </span>
