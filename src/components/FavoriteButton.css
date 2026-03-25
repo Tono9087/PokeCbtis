@@ -1,0 +1,33 @@
+.star-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.star-btn__icon {
+  fill: #aaa;
+  stroke: #aaa;
+  stroke-width: 1px;
+  transition: fill 0.2s;
+}
+
+.star-btn--active .star-btn__icon {
+  fill: gold;
+  stroke: gold;
+}
+
+.star-btn--sm {
+  width: 20px;
+  height: 20px;
+}
+
+.star-btn--md {
+  width: 26px;
+  height: 26px;
+}
+
+.star-btn--lg {
+  width: 34px;
+  height: 34px;
+}

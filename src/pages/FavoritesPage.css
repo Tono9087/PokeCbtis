@@ -1,0 +1,33 @@
+.favorites-page-v2 {
+  background-color: var(--bg-color);
+  padding: 10px;
+  min-height: calc(100vh - 125px);
+}
+
+.favorites-page-v2__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.favorites-page-v2__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 10px;
+  min-height: 200px;
+}
+
+.favorites-page-v2__empty-text {
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .favorites-page-v2__grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}

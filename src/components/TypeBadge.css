@@ -1,0 +1,26 @@
+.type-badge {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 999px;
+  background: var(--badge-bg);
+  color: #fff;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.type-badge--sm {
+  padding: 0.2em 0.7em;
+  font-size: 0.7rem;
+}
+
+.type-badge--md {
+  padding: 0.35em 1em;
+  font-size: 0.85rem;
+}
+
+.type-badge--lg {
+  padding: 0.45em 1.3em;
+  font-size: 1rem;
+}
