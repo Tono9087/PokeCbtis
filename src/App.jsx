@@ -4,15 +4,19 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import DetailPage from './pages/DetailPage';
 import FavoritesPage from './pages/FavoritesPage';
+import Dashboard from './pages/Dashboard';
 import './App.css';
 
 function Header() {
   const location = useLocation();
   let title = "Pokédex";
+  
   if (location.pathname.startsWith('/detail')) {
     title = "Detalle";
   } else if (location.pathname === '/favorites') {
     title = "Favorites";
+  } else if (location.pathname === '/dashboard') {
+    title = "Admin Panel";
   }
 
   return (
@@ -32,6 +36,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/detail/:id" element={<DetailPage />} />
             <Route path="/favorites" element={<FavoritesPage />} />
+            <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </main>
         <Navbar />
